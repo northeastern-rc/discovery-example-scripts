@@ -148,4 +148,23 @@ squeue -u $USER
 ## MATLAB GPU supported jobs
 
 You can run many built-in MATLAB functions using GPU arrays. Note that it is required to run the job on the gpu or multiple partitions with a GPU allocated to the job.
-The directory **matlab_gpu** provides more information.
+The script **submit_gpu.bash** inside directory **matlab_gpu** is an example Slurm script to be used for GPU-supported MATLAB scripts such as the example **my_gpu_program.m**:
+
+```bash
+#!/bin/bash
+#SBATCH -N 1			#use one compute node
+#SBATCH --ntask=1		#use 1 task
+#SBATCH -p gpu			#use the 'gpu' partition
+#SBATCH --gres=gpu:1		#request a GPU inside the node
+#SBATCH --output=testGPU.out	#standard output file name
+#SBATCH --error=testGPU.err	#standard error file name
+#SBATCH --job-name=testGPU	#name for the job allocation
+
+#To gain access to Matlab, a Matlab module must be loaded:
+module load matlab/R2021a
+
+#To submit Matlab jobs to the SLURM scheduler, the Matlab commands to be executed must be containined in a single .m script:
+matlab -nodisplay < my_gpu_program.m
+```
+
+Note that the matlab script **my_gpu_program.m** contains GPU array data structures and GPU-enabled MATLAB functions. Example taken from: https://www.mathworks.com/help/parallel-computing/gpuarray.html.
