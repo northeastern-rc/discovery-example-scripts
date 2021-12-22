@@ -1,4 +1,4 @@
-function [numWorkers,time] = myParallelAlgorithmFcn ()
+function [numWorkers,time] = myParallelAlgorithmFcn()
 
 complexities =  [2^18 2^20 2^21 2^22];
 numWorkers = [16 32 64];
