@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH -N 1			#use one compute node
-#SBATCH --ntask=1		#use 1 task
+#SBATCH --ntasks=1		#use 1 task
 #SBATCH -p gpu			#use the 'gpu' partition
 #SBATCH --gres=gpu:1		#request a GPU inside the node
 #SBATCH --output=testGPU.out	#standard output file name
