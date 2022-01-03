@@ -1,0 +1,77 @@
+Command:  /shared/centos7/schrodinger/2020-4/jaguar run -jobname=jag_graphene_opt_PBE-D3_6-31Gss jag_graphene_opt_PBE-D3_6-31Gss.in -HOST discovery-general -PARALLEL 16 -max_threads 2 -use_one_node -TMPLAUNCHDIR
+Release:  2020-4
+Exec:     /shared/centos7/schrodinger/2020-4/jaguar-v11.0/bin/Linux-x86_64
+Host:     c0219
+JobId:    login-00-0-5fda7491
+JobDir:   /tmp/mariana.levi/jag_graphene_opt_PBE-D3_6-31Gss#login-00-0-5fda7491
+Date:     Wed Dec 16 15:57:37 2020
+
+Contents of /tmp/mariana.levi/jag_graphene_opt_PBE-D3_6-31Gss#login-00-0-5fda7491:
+/tmp/mariana.levi/jag_graphene_opt_PBE-D3_6-31Gss#login-00-0-5fda7491/login-00-0-5fda7491.jlog
+/tmp/mariana.levi/jag_graphene_opt_PBE-D3_6-31Gss#login-00-0-5fda7491/login-00-0-5fda7491.recover
+/tmp/mariana.levi/jag_graphene_opt_PBE-D3_6-31Gss#login-00-0-5fda7491/jag_graphene_opt_PBE-D3_6-31Gss.in
+/tmp/mariana.levi/jag_graphene_opt_PBE-D3_6-31Gss#login-00-0-5fda7491/.write_dir.json
+/tmp/mariana.levi/jag_graphene_opt_PBE-D3_6-31Gss#login-00-0-5fda7491/jag_graphene_opt_PBE-D3_6-31Gss.mae
+/tmp/mariana.levi/jag_graphene_opt_PBE-D3_6-31Gss#login-00-0-5fda7491/login-00-0-5fda7491.hosts
+/tmp/mariana.levi/jag_graphene_opt_PBE-D3_6-31Gss#login-00-0-5fda7491/login-00-0-5fda7491.nodes
+/tmp/mariana.levi/jag_graphene_opt_PBE-D3_6-31Gss#login-00-0-5fda7491/login-00-0-5fda7491.mpinodes
+/tmp/mariana.levi/jag_graphene_opt_PBE-D3_6-31Gss#login-00-0-5fda7491/login-00-0-5fda7491
+/tmp/mariana.levi/jag_graphene_opt_PBE-D3_6-31Gss#login-00-0-5fda7491/jag_graphene_opt_PBE-D3_6-31Gss.log
+/tmp/mariana.levi/jag_graphene_opt_PBE-D3_6-31Gss#login-00-0-5fda7491/jag_graphene_opt_PBE-D3_6-31Gss.recover
+
+Executing subprocess:
+/shared/centos7/schrodinger/2020-4/jaguar-v11.0/bin/Linux-x86_64/jexec jag_graphene_opt_PBE-D3_6-31Gss.in -T 16 -out /tmp/mariana.levi/jag_graphene_opt_PBE-D3_6-31Gss#login-00-0-5fda7491 -cwd
+
+datadir=/shared/centos7/schrodinger/2020-4/jaguar-v11.0/data
+Job jag_graphene_opt_PBE-D3_6-31Gss started on c0219 at Wed Dec 16 15:57:38 2020
+jobid: login-00-0-5fda7491 
+Jaguar version 11.0, release 144
+ Using up to  16 threads per process
+Molecular Point Group: C1      
+Point Group used: C1
+pre (input checking) done.
+onee (1-electron integrals) done.
+hfig (HF initial guess) done.
+probe (project orbitals) done.
+grid (grid generation) done.
+rwr (Q operators) done.
+scf type: DFT=PBE(X+LC)+PW91 (PBE-D3)
+  
+       i  u  d  i  g
+       t  p  i  c  r                                 RMS    maximum
+       e  d  i  u  i                       energy  density   DIIS  
+       r  t  s  t  d       total energy    change  change    error 
+  
+etot    1  N  N  5  M  -11180.78974942529           2.3E-02  1.0E-01
+etot    2  Y  Y  6  M  -10705.00587397876 -4.8E+02  2.2E-02  3.8E-01
+etot    3  Y  Y  6  M  -11032.60048801071  3.3E+02  2.1E-02  1.5E-01
+etot    4  N  Y  2  U  -10914.24479911298 -1.2E+02  9.2E-02  1.8E-01
+etot    5  N  Y  2  U  -10391.59689716221 -5.2E+02  6.9E-02  2.5E-01
+etot    6  N  Y  2  U  -10865.61516496857  4.7E+02  3.2E-02  1.7E-01
+etot    7  Y  Y  6  M  -11159.73449824690  2.9E+02  7.1E-03  9.2E-02
+etot    8  N  Y  2  U  -11049.61102130431 -1.1E+02  3.9E-03  1.3E-01
+etot    9  N  Y  2  U  -11164.90201175321  1.2E+02  3.0E-03  8.2E-02
+etot   10  Y  Y  6  M  -11163.41887969952 -1.5E+00  2.5E-03  7.7E-02
+etot   11  N  Y  2  U  -11196.88826354587  3.3E+01  2.0E-03  4.3E-02
+etot   12  Y  Y  6  M  -11194.91132884942 -2.0E+00  1.4E-03  6.0E-02
+etot   13  N  Y  2  U  -11202.13405360311  7.2E+00  1.1E-03  2.4E-02
+etot   14  Y  Y  6  M  -11203.93837780629  1.8E+00  6.0E-04  1.9E-02
+etot   15  N  Y  2  U  -11204.74849232412  8.1E-01  3.5E-04  9.1E-03
+etot   16  Y  Y  6  M  -11204.98091506791  2.3E-01  2.1E-04  3.7E-03
+etot   17  N  Y  2  U  -11205.02870195824  4.8E-02  1.1E-04  2.3E-03
+etot   18  Y  Y  6  M  -11205.05088458185  2.2E-02  7.1E-05  1.8E-03
+etot   19  N  Y  2  U  -11205.06068116569  9.8E-03  5.2E-05  1.6E-03
+etot   20  Y  Y  6  M  -11205.06917116473  8.5E-03  4.9E-05  1.3E-03
+etot   21  N  Y  2  U  -11205.07621919458  7.0E-03  4.2E-05  7.9E-04
+etot   22  N  Y  2  U  -11205.08046462081  4.2E-03  3.1E-05  4.9E-04
+etot   23  N  Y  2  U  -11205.08276801604  2.3E-03  2.6E-05  4.6E-04
+etot   24  N  Y  2  U  -11205.08460994298  1.8E-03  2.4E-05  4.3E-04
+etot   25  N  Y  2  U  -11205.08611289900  1.5E-03  2.2E-05  4.3E-04
+etot   26  N  Y  2  U  -11205.08731919272  1.2E-03  2.0E-05  3.3E-04
+etot   27  N  Y  2  U  -11205.08827566454  9.6E-04  1.8E-05  3.0E-04
+etot   28  N  Y  2  U  -11205.08912053103  8.4E-04  1.6E-05  2.8E-04
+etot   29  N  Y  2  U  -11205.08984556367  7.3E-04  1.5E-05  2.5E-04
+etot   30  N  Y  2  U  -11205.09049285148  6.5E-04  1.5E-05  2.4E-04
+etot   31  N  Y  2  U  -11205.09105621848  5.6E-04  1.4E-05  2.4E-04
+Received termination signal at Wed Dec 16 16:07:21 2020
+Job jag_graphene_opt_PBE-D3_6-31Gss halted prematurely on c0219 at Wed Dec 16 16:07:21 2020
