@@ -148,4 +148,4 @@ squeue -u $USER
 ## MATLAB GPU supported jobs
 
 You can run many built-in MATLAB functions using GPU arrays. Note that it is required to run the job on the gpu or multiple partitions with a GPU allocated to the job.
-The directory **matlab_gpu** provides more information.
+
