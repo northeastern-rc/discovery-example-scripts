@@ -4,23 +4,25 @@ This example provides a use case on how to submit Schrodinger Desmond jobs on Di
 
 Here, we use Multisim of Desmond which runs in the umbrella mode on the input files:
 3FU3.pdb,3FU3\_md\_job\_1.cfg, 3FU3\_md\_job\_1.cms and 3FU3\_md\_job\_1.msj 
-NOTE: The submit shell script 3FU3\_md\_job\_1.sh does not directly use Slurm to submit a job. All Slurm parameters will be passed via the Schrodinger command directly, and a job will be submitted.
 
-Shell script 3FU3\_md\_job\_1.sh details:
+**NOTE:** The submit shell script 3FU3\_md\_job\_1.sh does not directly use Slurm to submit a job. All Slurm parameters will be passed via the Schrodinger command directly, and a job will be submitted.
+
+## Shell script 3FU3\_md\_job\_1.sh details
+
 1. `${SCHRODINGER}/utilities/multisim` is the exectuable program you are running.
-2. `-JOBNAME 3FU3\_md\_job\_1` - defines the slurm job name 
+2. `-JOBNAME 3FU3_md_job_1` - defines the slurm job name 
 3. `-HOST discovery-gpu` - determines the job partition allocation, such as running on a gpu, express, debug or the short partitions. The specific options and details can be found in the host files within the Schrodinger directories. For example, for schrodinger/2019-4 the file will be located at: `/shared/centos7/schrodinger/2019-4/schrodinger.hosts`
 The current options for that version are: discovery-debug, discovery-express, discovery-general, discovery-gpu and discovery-fullnode (depricated, so this option is the same as general).
 4. The `-maxjob` and `-cpu` parameters are used to calculate `%NPROC%` in the Schrodinger host file. The formula is a multiplication of the values of `-maxjob` and `-cpu` parameters. So kindly make sure that you are eligible to use (`-maxjob` * `-cpu`) cores in that partition or the job submission will fail at Slurm level. 
-5. `-m 3FU3\_md\_job\_1.msj` - specifies the .msj input file (defining the basic workflow).
-6. `-c 3FU3\_md\_job\_1.cfg` - specifies the .cfg input file (configuration parameters).
-7. `-description "Molecular Dynamics" 3FU3\_md\_job\_1.cms` - provides description.
+5. `-m 3FU3_md_job_1.msj` - specifies the .msj input file (defining the basic workflow).
+6. `-c 3FU3_md_job_1.cfg` - specifies the .cfg input file (configuration parameters).
+7. `-description "Molecular Dynamics" 3FU3_md_job_1.cms` - provides description.
 8. `-mode umbrella` - run MD simulations using the umbrella mode.
-9. `-set "stage[1].set\_family.md.jlaunch\_opt=[\"-gpu\"]"` - specify the utilization of a GPU in the calculation in this setup option.
+9. `-set "stage[1].set_family.md.jlaunch_opt=[\"-gpu\"]"` - specify the utilization of a GPU in the calculation in this setup option.
 10. The `-PROJ` parameter is not mentioned above but it Is the project file parameter (.prj file).
-11. `-o 3FU3\_md\_job\_1-out.cms` - provide the output file name.
+11. `-o 3FU3_md_job_1-out.cms` - provide the output file name.
 
-## Additional usful flags: 
+### Additional usful flags 
 
 You can find additional useful flags in the manual. To see the full list type:
 
@@ -29,10 +31,12 @@ module load schrodinger
 $SCHRODINGER/utilities/multisim -h 
 ```
 
-### Set up Passwordless SSH
+## Steps to run a job
+
+### Step 0 - set up Passwordless SSH
 It is recommended to setup passwordless ssh to ensure proper function of Maestro. Follow the instructions for [Mac](https://rc-docs.northeastern.edu/en/latest/first_steps/connect_mac.html#passwordless-ssh) or [Windows](https://rc-docs.northeastern.edu/en/latest/first_steps/connect_windows.html#passwordless-ssh).
 
-### Steps to run a job
+### Next steps:
 
 1. Clone the example scripts to your home, scratch or work directories. For example:
 ```bash
@@ -79,6 +83,12 @@ gpgpu:       0 , gpu1
 tmpdir:      /tmp
 ``` 
 Where in the added host `discovery-myhost` we've included the option to allocate 2 nodes and up to 128 CPUs, and in host `myhost-gpu` (mainly used for Maestro) we've modified up to 12 CPUs and a GPU to be allocated to the job.
+
+Additional info on how to modify the hosts file:
+* [Configure your personal schrodinger.hosts file](https://www.schrodinger.com/kb/1844)
+* [Multi-Core configuration suggestions](https://www.schrodinger.com/kb/462)
+* [List of applications that can run on GPUs](https://www.schrodinger.com/kb/278)
+
 
 ## Checkpointing:
 
