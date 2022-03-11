@@ -1,0 +1,1 @@
+"${SCHRODINGER}/jaguar" run -jobname=jag_graphene_opt_PBE-D3_6-31Gss jag_graphene_opt_PBE-D3_6-31Gss.in -HOST discovery-general -PARALLEL 16 -max_threads 2 -use_one_node -TMPLAUNCHDIR

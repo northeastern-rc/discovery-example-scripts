@@ -1,0 +1,1220 @@
+Job jag_graphene_opt_PBE-D3_6-31Gss started on c0219 at Wed Dec 16 15:57:38 2020
+jobid: login-00-0-5fda7491
+
+  +--------------------------------------------------------------------+
+  |  Jaguar version 11.0, release 144                                  |
+  |                                                                    |
+  |  Copyright Schrodinger, Inc.                                       |
+  |  All Rights Reserved.                                              |
+  |                                                                    |
+  |  The following have contributed to Jaguar (listed alphabetically): |
+  |  Mike Beachy, Art Bochevarov, Dale Braden, Yixiang Cao,            |
+  |  Alan Chien, Chris Cortis, Rich Friesner, Bill Goddard,            |
+  |  Hod Greeley, Tom Hughes, Leif Jacobson, Jean-Marc Langlois,       |
+  |  Daniel Levine, Daniel Mainz, Rob Murphy, Dean Philipp,            |
+  |  Tom Pollard, Murco Ringnalda, Mark Watson, Haoyu Yu.              |
+  |                                                                    |
+  |  Use of this program should be acknowledged in publications as:    |
+  |                                                                    |
+  |  Jaguar, version 11.0, Schrodinger, Inc., New York, NY, 2020.      |
+  |                                                                    |
+  |  A. D. Bochevarov, E. Harder, T. F. Hughes, J. R. Greenwood,       |
+  |  D. A. Braden, D. M. Philipp, D. Rinaldo, M. D. Halls,             |
+  |  J. Zhang, R. A. Friesner, "Jaguar: A High-Performance Quantum     |
+  |  Chemistry Software Program with Strengths in Life and Materials   |
+  |  Sciences", Int. J. Quantum Chem., 2013, 113(18), 2110-2142.       |
+  +--------------------------------------------------------------------+
+  
+  start of program pre
+  
+  Job name: jag_graphene_opt_PBE-D3_6-31Gss
+  Executables used: /shared/centos7/schrodinger/2020-4/jaguar-v11.0/bin/Linux-x86_64
+  Temporary files : /tmp/mariana.levi/jag_graphene_opt_PBE-D3_6-31Gss#login-00-0-5fda7491
+  Maestro file (input):  jag_graphene_opt_PBE-D3_6-31Gss.mae
+  Maestro file (output): jag_graphene_opt_PBE-D3_6-31Gss.01.mae
+  
+ Contents of input file: &gen section only
+ ----------------Contents start----------------
+&gen
+iplotesp=1
+ntemp=40
+irder=1
+isolv=7
+pcm_model=cosmo
+tmpstp=100.0
+fdtemp=300.0
+maxitg=1000
+basis=6-31G**
+maxit=4800
+ifdtherm=1
+igeopt=1
+ip472=2
+iplotalie=1
+dftname=PBE-D3
+ifreq=1
+nogas=0
+iorb2a=lumo+0
+ip192=2
+ip175=2
+iplotden=2
+tmpini=1.0
+iorb1a=homo-0
+&
+ -----------------Contents end-----------------
+ 
+  basis set:             6-31g**                         
+  net molecular charge:    0
+  multiplicity:            1
+  
+  Using up to  16 threads per process
+  
+  number of basis functions....         1816
+  
+ Input geometry:
+                                   angstroms
+  atom               x                 y                 z
+  C1           -1.9816487300     -0.0869178258      1.2851745326 
+  C2           -1.2661471623     -0.2094957686      0.0792209954 
+  C3            0.1450822706     -0.1623423347      0.0979774250 
+  C4            0.8351650633     -0.1857753619      1.3294163553 
+  C5            0.1196973277     -0.1613828509      2.5315239197 
+  C6           -1.3321194347      0.1300439191      2.5069336326 
+  C7            2.2319469639     -0.3456507383      1.3715218849 
+  C8            2.8827689898     -0.4213399034      2.6228710206 
+  C9            2.1276260276     -0.2604724232      3.8203074128 
+  C10           0.7432661135     -0.5889038788      3.7218651595 
+  C11           0.8602828455     -0.2118287050     -1.1128550057 
+  C12           2.3390280027     -0.1170691151     -1.0759155109 
+  C13           3.0056738107     -0.2632754102      0.1039167481 
+  C14           0.2072013305     -0.4742783552     -2.3283707312 
+  C15           1.0653067905     -0.6704955327     -3.5668391567 
+  C16           2.4034858485     -0.1972072146     -3.6046777939 
+  C17           2.9929166994      0.6476787631     -2.3486189466 
+  C18          -1.9526624751     -0.3948257825     -1.1383296850 
+  C19          -1.2223480400     -0.5823841739     -2.3309299624 
+  C20          -1.9926120138     -1.0713708626     -3.5110222532 
+  C21          -1.2520625259     -1.9225980975     -4.3070504830 
+  C22           0.3904329678     -1.8029776175     -4.5385096453 
+  C23          -2.0309779955      0.6370259310      3.6466395394 
+  C24          -3.4672153671      0.5770978474      3.6118419396 
+  C25          -4.0650643744     -0.0547878755      2.4884046766 
+  C26          -3.3702971531     -0.1809910710      1.2799960487 
+  C27          -4.0702388139     -0.3681784217      0.0793925134 
+  C28          -3.3750124747     -0.4590985916     -1.1404212054 
+  C29          -4.1739059697     -0.6242325503     -2.3948607188 
+  C30          -3.5257858034     -0.9732977872     -3.5566195260 
+  C31          -5.5143879488     -0.2878348275      2.5052950927 
+  C32          -6.2280497606     -0.1575640453      1.2708761207 
+  C33          -5.5624297522     -0.3199146228      0.0986724035 
+  C34          -6.3323029014     -0.3767141116     -1.1312263918 
+  C35          -5.6829043990     -0.5074332001     -2.3228474809 
+  C36          -6.5088654880     -0.4651704188     -3.5446991250 
+  C37          -5.7559766118     -0.2752281480     -4.6751512373 
+  C38          -4.4835784017     -1.2788110599     -4.8380148294 
+  C39          -7.7184371168      0.7165151421      1.3216487458 
+  C40          -8.4413303515     -0.2118374045      0.1819021119 
+  C41          -7.8087748164     -0.4244147007     -1.0282247939 
+  C42          -8.6061001339     -0.6251788711     -2.2669533525 
+  C43          -8.0199482238     -0.5731415571     -3.5119627704 
+  C44          -6.1558387550     -0.7824276278      3.6027974333 
+  C45          -7.6361540000     -0.5324896582      3.7873539299 
+  C46          -8.4121523576     -0.0540562871      2.7386183755 
+  C47           4.4589955768     -0.1838460243      0.1865597876 
+  C48           5.1371930648     -0.3243016729      1.5094124339 
+  C49           4.3573617525     -0.5937071066      2.7283207686 
+  C50           4.6522285511      0.2501477190     -2.2290288421 
+  C51           5.2496913028     -0.0452905339     -1.0228614863 
+  C52           3.3482830814     -0.0300336084     -4.9428596368 
+  C53           4.8880087762      0.5287086448     -4.6441894594 
+  C54           5.5040482639      0.4283739429     -3.4160132430 
+  C55           6.6222769670     -0.3213555980      1.6413808266 
+  C56           7.2397913324     -0.3666134889      2.9970429027 
+  C57           6.4185206465     -0.5553213252      4.0929156544 
+  C58           4.9821410370     -0.9736759758      3.8877131722 
+  C59           6.7357985453     -0.2127195623     -0.8452304312 
+  C60           7.3730544890     -0.3434391115      0.5167979881 
+  C61           6.9973861959      0.3467850865     -3.2430568827 
+  C62           7.5715608128     -0.0967553922     -1.9505152306 
+  C63           8.8280783906     -0.5075688142      0.6043433621 
+  C64           9.5341460523     -0.3237634978      1.7717305003 
+  C65           8.8052606302     -0.0667572514      3.1911990968 
+  C66           9.0437452692     -0.3616238702     -1.8290836819 
+  C67           9.5748612155     -0.8128767451     -0.6444682896 
+  C68           7.9339241728      0.8662118645     -4.1112065835 
+  C69           9.2936540778      0.2016354416     -4.2037663897 
+  C70           9.9172654775     -0.1679063913     -3.0177356051 
+  C71         -10.0021672414      0.1035882551      2.8832859051 
+  C72         -10.6223566174     -0.0120550458      1.3932073070 
+  C73          -9.8877727500     -0.3884491520      0.2950069568 
+  C74         -10.6174228561     -0.9559254026     -0.8584375250 
+  C75         -10.0551205699     -0.8340892543     -2.1034913754 
+  C76         -10.9513053666     -1.0115202050     -3.2471818252 
+  C77         -10.3779971969     -1.3169543903     -4.4650039521 
+  C78          -8.9771074059     -0.5934683750     -4.8435838564 
+  Al79          2.7418972365      0.9558762532      5.4701963852 
+  Al80         -0.0888348314     -2.1124436300      4.9638159788 
+  Al81         -1.9109368716     -3.9054076711     -4.8010673062 
+  Al82          0.4225905907     -1.5239378206     -6.7323704346 
+  Al83          1.4536875583     -3.6505685151     -3.8495306425 
+  Al84         -1.0814366477      1.8345207249      5.1553003592 
+  Al85         -4.6651533748      1.9067215215      4.8325422933 
+  Al86         -5.6815952271      1.6656792619     -5.5729255332 
+  Al87         -3.5399203456     -1.0572068692     -6.7917126125 
+  Al88         -5.3948960775     -3.3210664327     -4.6492028116 
+  Al89         -5.3135436319     -2.4470719184      4.6913950482 
+  Al90         -8.1047801634     -0.2847079888      5.8937070733 
+  Al91          3.8592992883     -1.9301294080     -5.9776442814 
+  Al92          2.2976456711      1.5321546146     -6.1279534649 
+  Al93          5.8491353337      1.1004764391     -6.5040339362 
+  Al94          6.7315491679      0.2479065594      6.0819480734 
+  Al95          4.3946865556     -2.7456015201      4.9613652948 
+  Al96         11.6528486972      0.0889540875      1.7879288372 
+  Al97          9.0709870670      2.0490727261      3.7450978097 
+  Al98          9.7223771416     -1.4415610900      4.6549090652 
+  Al99         10.5515925925     -2.7622257054     -0.6326974565 
+  Al100         8.1062710299      3.0342850898     -4.1997388449 
+  Al101         9.8727797155     -0.6530286492     -6.0619262588 
+  Al102        12.0242778761      0.1557639327     -2.7944048727 
+  Al103       -10.9389154493     -1.5815895916      3.9718128753 
+  Al104       -10.4279765569      2.0292481843      3.8600238059 
+  Al105       -12.6293204829      0.7415115349      1.1838330765 
+  Al106       -11.7767809508     -2.7419956798     -0.4098896769 
+  Al107       -12.9253402443     -0.1504151097     -3.1635962136 
+  Al108       -11.4234099883     -2.6598119372     -5.7561814596 
+  Al109        -9.5214109445      1.4952991638     -5.3280646987 
+  Al110        -8.0861002456     -1.5135158988     -6.6161034797 
+  Al111        -7.5457289673      2.2355095399      1.4645757584 
+  Al112         2.9664855858      2.4899921429     -2.3231610657 
+   
+  principal moments of inertia:
+        amu*angstrom^2:    31218.36814    95404.49931   119087.13153
+                g*cm^2: 5.18393134E-36 1.58422879E-35 1.97748810E-35
+   
+  rotational constants:
+               cm^(-1):      0.00053999      0.00017670      0.00014156
+                   GHz:      0.01618851      0.00529722      0.00424378
+   
+  Molecular weight:    1853.37 amu
+   
+  Stoichiometry: Al34C78
+  Molecular Point Group: C1      
+  Point Group used: C1
+  
+ 
+Number of optimization coordinates:   511
+Number of independent coordinates:    511
+Number of non-redundant coordinates:  330
+Number of frozen coordinates:           0
+Number of harmonic constraints:         0
+ 
+Number of geometric degrees of freedom:   330
+Maximum geometric degrees of freedom:     330
+ " " " " " excluding dummy atoms:         330
+ 
+  
+ geometric coordinates and optimization variables:
+ var coord  type     atom1     atom2     atom3     atom4      status
+ --- ----- ------- --------- --------- --------- --------- -------------
+   1     1 stretch  C1        C2                                               
+   2     2  bend    C1        C2        C3                                     
+   3     3 torsion  C1        C2        C3        C4                           
+   4     4 torsion  C1        C2        C3        C11                          
+   5     5  bend    C1        C2        C18                                    
+   6     6 torsion  C1        C2        C18       C19                          
+   7     7 torsion  C1        C2        C18       C28                          
+   8     8 torsion  C1        C6        C5        C4                           
+   9     9 stretch  C1        C6                                               
+  10    10  bend    C1        C6        C5                                     
+  11    11  bend    C1        C6        C23                                    
+  12    12 torsion  C1        C6        C23       C24                          
+  13    13 torsion  C1        C6        C23       Al84                         
+  14    14 torsion  C1        C26       C25       C24                          
+  15    15 stretch  C1        C26                                              
+  16    16  bend    C1        C26       C25                                    
+  17    17  bend    C2        C1        C6                                     
+  18    18 torsion  C2        C1        C6        C5                           
+  19    19 torsion  C2        C1        C6        C23                          
+  20    20 stretch  C2        C3                                               
+  21    21  bend    C2        C3        C4                                     
+  22    22 torsion  C2        C3        C4        C5                           
+  23    23 torsion  C2        C3        C4        C7                           
+  24    24  bend    C2        C3        C11                                    
+  25    25 torsion  C2        C3        C11       C12                          
+  26    26 torsion  C2        C3        C11       C14                          
+  27    27 stretch  C2        C18                                              
+  28    28  bend    C2        C18       C19                                    
+  29    29 torsion  C2        C18       C19       C14                          
+  30    30 torsion  C3        C2        C1        C6                           
+  31    31 stretch  C3        C4                                               
+  32    32  bend    C3        C4        C5                                     
+  33    33 torsion  C3        C4        C5        C6                           
+  34    34 torsion  C3        C4        C5        C10                          
+  35    35  bend    C3        C4        C7                                     
+  36    36 torsion  C3        C4        C7        C8                           
+  37    37 torsion  C3        C4        C7        C13                          
+  38    38 stretch  C3        C11                                              
+  39    39  bend    C3        C11       C12                                    
+  40    40 torsion  C3        C11       C12       C13                          
+  41    41 stretch  C4        C5                                               
+  42    42  bend    C4        C5        C6                                     
+  43    43 torsion  C4        C5        C6        C23                          
+  44    44  bend    C4        C5        C10                                    
+  45    45 torsion  C4        C5        C10       C9                           
+  46    46 torsion  C4        C5        C10       Al80                         
+  47    47 stretch  C4        C7                                               
+  48    48  bend    C4        C7        C8                                     
+  49    49 torsion  C4        C7        C8        C9                           
+  50    50 torsion  C4        C7        C8        C49                          
+  51    51 stretch  C5        C6                                               
+  52    52 torsion  C5        C10       C9        C8                           
+  53    53 stretch  C5        C10                                              
+  54    54  bend    C5        C10       C9                                     
+  55    55  bend    C5        C10       Al80                                   
+  56    56 torsion  C6        C1        C2        C18                          
+  57    57  bend    C6        C1        C26                                    
+  58    58 torsion  C6        C1        C26       C25                          
+  59    59 torsion  C6        C1        C26       C27                          
+  60    60 torsion  C6        C5        C4        C7                           
+  61    61 stretch  C6        C23                                              
+  62    62  bend    C6        C23       C24                                    
+  63    63 torsion  C6        C23       C24       C25                          
+  64    64 torsion  C6        C23       C24       Al85                         
+  65    65  bend    C6        C23       Al84                                   
+  66    66 torsion  C7        C4        C3        C11                          
+  67    67 stretch  C7        C8                                               
+  68    68  bend    C7        C8        C9                                     
+  69    69 torsion  C7        C8        C9        C10                          
+  70    70 torsion  C7        C8        C9        Al79                         
+  71    71  bend    C7        C8        C49                                    
+  72    72 torsion  C7        C8        C49       C48                          
+  73    73 torsion  C7        C13       C12       C11                          
+  74    74 stretch  C7        C13                                              
+  75    75  bend    C7        C13       C12                                    
+  76    76  bend    C8        C7        C13                                    
+  77    77 torsion  C8        C7        C13       C12                          
+  78    78 torsion  C8        C7        C13       C47                          
+  79    79 stretch  C8        C9                                               
+  80    80  bend    C8        C9        C10                                    
+  81    81  bend    C8        C9        Al79                                   
+  82    82 torsion  C8        C49       C48       C47                          
+  83    83 stretch  C8        C49                                              
+  84    84  bend    C8        C49       C48                                    
+  85    85 torsion  C8        C49       C58       Al95                         
+  86    86 stretch  C9        C10                                              
+  87    87 stretch  C9        Al79                                             
+  88    88 torsion  C10       C9        C8        C49                          
+  89    89 stretch  C10       Al80                                             
+  90    90 torsion  C11       C3        C2        C18                          
+  91    91 stretch  C11       C12                                              
+  92    92  bend    C11       C12       C13                                    
+  93    93 torsion  C11       C12       C13       C47                          
+  94    94 torsion  C11       C12       C17       Al112                        
+  95    95 stretch  C11       C14                                              
+  96    96  bend    C11       C14       C15                                    
+  97    97 torsion  C11       C14       C15       C16                          
+  98    98  bend    C12       C11       C14                                    
+  99    99 torsion  C12       C11       C14       C15                          
+ 100   100 torsion  C12       C11       C14       C19                          
+ 101   101 stretch  C12       C13                                              
+ 102   102  bend    C12       C13       C47                                    
+ 103   103 torsion  C12       C13       C47       C48                          
+ 104   104 torsion  C12       C17       C16       C15                          
+ 105   105 stretch  C12       C17                                              
+ 106   106  bend    C12       C17       C16                                    
+ 107   107  bend    C12       C17       Al112                                  
+ 108   108 torsion  C13       C7        C8        C49                          
+ 109   109 torsion  C13       C12       C11       C14                          
+ 110   110  bend    C13       C12       C17                                    
+ 111   111 torsion  C13       C12       C17       C16                          
+ 112   112 torsion  C13       C12       C17       C50                          
+ 113   113 stretch  C13       C47                                              
+ 114   114  bend    C13       C47       C48                                    
+ 115   115 torsion  C13       C47       C48       C49                          
+ 116   116 torsion  C14       C11       C12       C17                          
+ 117   117 stretch  C14       C15                                              
+ 118   118  bend    C14       C15       C16                                    
+ 119   119 torsion  C14       C15       C16       C17                          
+ 120   120 torsion  C14       C15       C22       Al82                         
+ 121   121 torsion  C14       C19       C18       C28                          
+ 122   122 stretch  C14       C19                                              
+ 123   123  bend    C14       C19       C18                                    
+ 124   124  bend    C15       C14       C19                                    
+ 125   125 torsion  C15       C14       C19       C18                          
+ 126   126 torsion  C15       C14       C19       C20                          
+ 127   127 stretch  C15       C16                                              
+ 128   128  bend    C15       C16       C17                                    
+ 129   129 torsion  C15       C16       C17       C50                          
+ 130   130 torsion  C15       C16       C52       Al91                         
+ 131   131 torsion  C15       C22       C21       C20                          
+ 132   132 stretch  C15       C22                                              
+ 133   133  bend    C15       C22       C21                                    
+ 134   134  bend    C15       C22       Al82                                   
+ 135   135  bend    C15       C22       Al83                                   
+ 136   136 torsion  C16       C15       C14       C19                          
+ 137   137  bend    C16       C15       C22                                    
+ 138   138 torsion  C16       C15       C22       C21                          
+ 139   139 stretch  C16       C17                                              
+ 140   140  bend    C16       C17       C50                                    
+ 141   141 torsion  C16       C17       C50       C51                          
+ 142   142 stretch  C16       C52                                              
+ 143   143  bend    C16       C52       C53                                    
+ 144   144 torsion  C16       C52       C53       C54                          
+ 145   145 torsion  C16       C52       C53       Al93                         
+ 146   146  bend    C16       C52       Al91                                   
+ 147   147  bend    C16       C52       Al92                                   
+ 148   148 torsion  C17       C12       C13       C47                          
+ 149   149 torsion  C17       C16       C15       C22                          
+ 150   150  bend    C17       C16       C52                                    
+ 151   151 torsion  C17       C16       C52       C53                          
+ 152   152 stretch  C17       C50                                              
+ 153   153  bend    C17       C50       C51                                    
+ 154   154 torsion  C17       C50       C51       C47                          
+ 155   155 stretch  C17       Al112                                            
+ 156   156 torsion  C18       C2        C1        C26                          
+ 157   157 stretch  C18       C19                                              
+ 158   158  bend    C18       C19       C20                                    
+ 159   159 torsion  C18       C19       C20       C21                          
+ 160   160 torsion  C18       C19       C20       C30                          
+ 161   161 torsion  C18       C28       C27       C26                          
+ 162   162 stretch  C18       C28                                              
+ 163   163  bend    C18       C28       C27                                    
+ 164   164 torsion  C19       C14       C15       C22                          
+ 165   165  bend    C19       C18       C28                                    
+ 166   166 torsion  C19       C18       C28       C27                          
+ 167   167 torsion  C19       C18       C28       C29                          
+ 168   168 stretch  C19       C20                                              
+ 169   169  bend    C19       C20       C21                                    
+ 170   170 torsion  C19       C20       C21       C22                          
+ 171   171 torsion  C19       C20       C21       Al81                         
+ 172   172  bend    C19       C20       C30                                    
+ 173   173 torsion  C19       C20       C30       C29                          
+ 174   174 torsion  C20       C19       C18       C28                          
+ 175   175 stretch  C20       C21                                              
+ 176   176  bend    C20       C21       C22                                    
+ 177   177  bend    C20       C21       Al81                                   
+ 178   178 torsion  C20       C30       C29       C28                          
+ 179   179 stretch  C20       C30                                              
+ 180   180  bend    C20       C30       C29                                    
+ 181   181 torsion  C20       C30       C38       Al87                         
+ 182   182 stretch  C21       C22                                              
+ 183   183 stretch  C21       Al81                                             
+ 184   184 torsion  C22       C15       C16       C52                          
+ 185   185 stretch  C22       Al82                                             
+ 186   186 stretch  C22       Al83                                             
+ 187   187 torsion  C23       C6        C1        C26                          
+ 188   188 stretch  C23       C24                                              
+ 189   189  bend    C23       C24       C25                                    
+ 190   190 torsion  C23       C24       C25       C26                          
+ 191   191  bend    C23       C24       Al85                                   
+ 192   192 stretch  C23       Al84                                             
+ 193   193 stretch  C24       C25                                              
+ 194   194  bend    C24       C25       C26                                    
+ 195   195 torsion  C24       C25       C26       C27                          
+ 196   196 stretch  C24       Al85                                             
+ 197   197 stretch  C25       C26                                              
+ 198   198  bend    C25       C26       C27                                    
+ 199   199 torsion  C25       C26       C27       C28                          
+ 200   200 stretch  C25       C31                                              
+ 201   201  bend    C25       C31       C32                                    
+ 202   202 torsion  C25       C31       C32       C33                          
+ 203   203 torsion  C25       C31       C44       Al89                         
+ 204   204  bend    C26       C25       C31                                    
+ 205   205 torsion  C26       C25       C31       C32                          
+ 206   206 torsion  C26       C25       C31       C44                          
+ 207   207 stretch  C26       C27                                              
+ 208   208  bend    C26       C27       C28                                    
+ 209   209 torsion  C26       C27       C28       C29                          
+ 210   210 torsion  C27       C26       C25       C31                          
+ 211   211 stretch  C27       C28                                              
+ 212   212  bend    C27       C28       C29                                    
+ 213   213 torsion  C27       C28       C29       C30                          
+ 214   214 torsion  C27       C33       C32       C31                          
+ 215   215 stretch  C27       C33                                              
+ 216   216  bend    C27       C33       C32                                    
+ 217   217  bend    C28       C27       C33                                    
+ 218   218 torsion  C28       C27       C33       C32                          
+ 219   219 torsion  C28       C27       C33       C34                          
+ 220   220 stretch  C28       C29                                              
+ 221   221  bend    C28       C29       C30                                    
+ 222   222 torsion  C28       C29       C30       C38                          
+ 223   223 torsion  C29       C28       C27       C33                          
+ 224   224 stretch  C29       C30                                              
+ 225   225  bend    C29       C30       C38                                    
+ 226   226 torsion  C29       C30       C38       C37                          
+ 227   227 torsion  C29       C35       C34       C33                          
+ 228   228 stretch  C29       C35                                              
+ 229   229  bend    C29       C35       C34                                    
+ 230   230  bend    C30       C29       C35                                    
+ 231   231 torsion  C30       C29       C35       C34                          
+ 232   232 torsion  C30       C29       C35       C36                          
+ 233   233 torsion  C30       C38       C37       C36                          
+ 234   234 stretch  C30       C38                                              
+ 235   235  bend    C30       C38       C37                                    
+ 236   236  bend    C30       C38       Al87                                   
+ 237   237  bend    C30       C38       Al88                                   
+ 238   238 stretch  C31       C32                                              
+ 239   239  bend    C31       C32       C33                                    
+ 240   240 torsion  C31       C32       C33       C34                          
+ 241   241 stretch  C31       C44                                              
+ 242   242  bend    C31       C44       C45                                    
+ 243   243 torsion  C31       C44       C45       C46                          
+ 244   244 torsion  C31       C44       C45       Al90                         
+ 245   245  bend    C31       C44       Al89                                   
+ 246   246  bend    C32       C31       C44                                    
+ 247   247 torsion  C32       C31       C44       C45                          
+ 248   248 stretch  C32       C33                                              
+ 249   249  bend    C32       C33       C34                                    
+ 250   250 torsion  C32       C33       C34       C35                          
+ 251   251 torsion  C33       C32       C31       C44                          
+ 252   252 stretch  C33       C34                                              
+ 253   253  bend    C33       C34       C35                                    
+ 254   254 torsion  C33       C34       C35       C36                          
+ 255   255 stretch  C34       C35                                              
+ 256   256  bend    C34       C35       C36                                    
+ 257   257 torsion  C34       C35       C36       C37                          
+ 258   258 torsion  C34       C35       C36       C43                          
+ 259   259 torsion  C34       C41       C40       C39                          
+ 260   260 torsion  C34       C41       C40       C73                          
+ 261   261 stretch  C34       C41                                              
+ 262   262  bend    C34       C41       C40                                    
+ 263   263 torsion  C35       C29       C30       C38                          
+ 264   264  bend    C35       C34       C41                                    
+ 265   265 torsion  C35       C34       C41       C40                          
+ 266   266 torsion  C35       C34       C41       C42                          
+ 267   267 stretch  C35       C36                                              
+ 268   268  bend    C35       C36       C37                                    
+ 269   269 torsion  C35       C36       C37       C38                          
+ 270   270 torsion  C35       C36       C37       Al86                         
+ 271   271  bend    C35       C36       C43                                    
+ 272   272 torsion  C35       C36       C43       C42                          
+ 273   273 torsion  C36       C35       C34       C41                          
+ 274   274 stretch  C36       C37                                              
+ 275   275  bend    C36       C37       C38                                    
+ 276   276  bend    C36       C37       Al86                                   
+ 277   277 torsion  C36       C43       C42       C41                          
+ 278   278 stretch  C36       C43                                              
+ 279   279  bend    C36       C43       C42                                    
+ 280   280 torsion  C36       C43       C78       Al109                        
+ 281   281 stretch  C37       C38                                              
+ 282   282 stretch  C37       Al86                                             
+ 283   283 stretch  C38       Al87                                             
+ 284   284 stretch  C38       Al88                                             
+ 285   285 stretch  C39       C40                                              
+ 286   286  bend    C39       C40       C41                                    
+ 287   287 stretch  C39       Al111                                            
+ 288   288  bend    C40       C39       Al111                                  
+ 289   289 stretch  C40       C41                                              
+ 290   290  bend    C40       C41       C42                                    
+ 291   291 torsion  C40       C41       C42       C43                          
+ 292   292 torsion  C40       C73       C72       C71                          
+ 293   293 stretch  C40       C73                                              
+ 294   294  bend    C40       C73       C72                                    
+ 295   295  bend    C40       C73       C74                                    
+ 296   296 torsion  C40       C73       C74       C75                          
+ 297   297 torsion  C40       C73       C74       Al106                        
+ 298   298 torsion  C41       C40       C39       Al111                        
+ 299   299  bend    C41       C40       C73                                    
+ 300   300 torsion  C41       C40       C73       C72                          
+ 301   301 torsion  C41       C40       C73       C74                          
+ 302   302 stretch  C41       C42                                              
+ 303   303  bend    C41       C42       C43                                    
+ 304   304 torsion  C41       C42       C43       C78                          
+ 305   305 torsion  C42       C41       C40       C73                          
+ 306   306 stretch  C42       C43                                              
+ 307   307  bend    C42       C43       C78                                    
+ 308   308 torsion  C42       C43       C78       C77                          
+ 309   309 torsion  C42       C75       C74       C73                          
+ 310   310 stretch  C42       C75                                              
+ 311   311  bend    C42       C75       C74                                    
+ 312   312  bend    C42       C75       C76                                    
+ 313   313 torsion  C42       C75       C76       C77                          
+ 314   314 torsion  C42       C75       C76       Al107                        
+ 315   315  bend    C43       C42       C75                                    
+ 316   316 torsion  C43       C42       C75       C74                          
+ 317   317 torsion  C43       C42       C75       C76                          
+ 318   318 torsion  C43       C78       C77       C76                          
+ 319   319 stretch  C43       C78                                              
+ 320   320  bend    C43       C78       C77                                    
+ 321   321  bend    C43       C78       Al109                                  
+ 322   322  bend    C43       C78       Al110                                  
+ 323   323 stretch  C44       C45                                              
+ 324   324  bend    C44       C45       C46                                    
+ 325   325 torsion  C44       C45       C46       C71                          
+ 326   326  bend    C44       C45       Al90                                   
+ 327   327 stretch  C44       Al89                                             
+ 328   328 stretch  C45       C46                                              
+ 329   329  bend    C45       C46       C71                                    
+ 330   330 torsion  C45       C46       C71       C72                          
+ 331   331 torsion  C45       C46       C71       Al103                        
+ 332   332 stretch  C45       Al90                                             
+ 333   333 stretch  C46       C71                                              
+ 334   334  bend    C46       C71       C72                                    
+ 335   335 torsion  C46       C71       C72       C73                          
+ 336   336 torsion  C46       C71       C72       Al105                        
+ 337   337  bend    C46       C71       Al103                                  
+ 338   338  bend    C46       C71       Al104                                  
+ 339   339 stretch  C47       C48                                              
+ 340   340  bend    C47       C48       C49                                    
+ 341   341 torsion  C47       C48       C49       C58                          
+ 342   342 torsion  C47       C51       C50       C54                          
+ 343   343 stretch  C47       C51                                              
+ 344   344  bend    C47       C51       C50                                    
+ 345   345  bend    C47       C77       C78                                    
+ 346   346 torsion  C47       C78       C77       C76                          
+ 347   347  bend    C48       C47       C51                                    
+ 348   348 torsion  C48       C47       C51       C50                          
+ 349   349 torsion  C48       C47       C51       C59                          
+ 350   350 stretch  C48       C49                                              
+ 351   351  bend    C48       C49       C58                                    
+ 352   352 torsion  C48       C49       C58       C57                          
+ 353   353 stretch  C48       C55                                              
+ 354   354  bend    C48       C55       C56                                    
+ 355   355 torsion  C48       C55       C56       C57                          
+ 356   356 torsion  C49       C48       C47       C51                          
+ 357   357  bend    C49       C48       C55                                    
+ 358   358 torsion  C49       C48       C55       C56                          
+ 359   359 torsion  C49       C48       C55       C60                          
+ 360   360 torsion  C49       C58       C57       C56                          
+ 361   361 stretch  C49       C58                                              
+ 362   362  bend    C49       C58       C57                                    
+ 363   363  bend    C49       C58       Al95                                   
+ 364   364 torsion  C50       C17       C16       C52                          
+ 365   365 stretch  C50       C51                                              
+ 366   366  bend    C50       C51       C59                                    
+ 367   367 torsion  C50       C51       C59       C60                          
+ 368   368 torsion  C50       C54       C53       C52                          
+ 369   369 stretch  C50       C54                                              
+ 370   370  bend    C50       C54       C53                                    
+ 371   371  bend    C50       C54       C61                                    
+ 372   372 torsion  C50       C54       C61       C62                          
+ 373   373 torsion  C51       C47       C48       C55                          
+ 374   374  bend    C51       C50       C54                                    
+ 375   375 torsion  C51       C50       C54       C53                          
+ 376   376 torsion  C51       C50       C54       C61                          
+ 377   377 stretch  C51       C59                                              
+ 378   378  bend    C51       C59       C60                                    
+ 379   379 torsion  C51       C59       C60       C55                          
+ 380   380 stretch  C52       C53                                              
+ 381   381  bend    C52       C53       C54                                    
+ 382   382  bend    C52       C53       Al93                                   
+ 383   383 stretch  C52       Al91                                             
+ 384   384 stretch  C52       Al92                                             
+ 385   385 stretch  C53       C54                                              
+ 386   386 stretch  C53       Al93                                             
+ 387   387 torsion  C54       C50       C51       C59                          
+ 388   388 stretch  C54       C61                                              
+ 389   389  bend    C54       C61       C62                                    
+ 390   390 torsion  C54       C61       C62       C59                          
+ 391   391 torsion  C54       C61       C68       Al100                        
+ 392   392 torsion  C55       C48       C49       C58                          
+ 393   393 stretch  C55       C56                                              
+ 394   394  bend    C55       C56       C57                                    
+ 395   395 torsion  C55       C56       C57       C58                          
+ 396   396 torsion  C55       C56       C57       Al94                         
+ 397   397  bend    C55       C56       C65                                    
+ 398   398 torsion  C55       C56       C65       C64                          
+ 399   399 torsion  C55       C56       C65       Al97                         
+ 400   400 torsion  C55       C60       C59       C62                          
+ 401   401 stretch  C55       C60                                              
+ 402   402  bend    C55       C60       C59                                    
+ 403   403  bend    C56       C55       C60                                    
+ 404   404 torsion  C56       C55       C60       C59                          
+ 405   405 torsion  C56       C55       C60       C63                          
+ 406   406 stretch  C56       C57                                              
+ 407   407  bend    C56       C57       C58                                    
+ 408   408  bend    C56       C57       Al94                                   
+ 409   409 torsion  C56       C65       C64       C63                          
+ 410   410 stretch  C56       C65                                              
+ 411   411  bend    C56       C65       C64                                    
+ 412   412  bend    C56       C65       Al97                                   
+ 413   413  bend    C56       C65       Al98                                   
+ 414   414 torsion  C57       C56       C55       C60                          
+ 415   415 stretch  C57       C58                                              
+ 416   416 stretch  C57       Al94                                             
+ 417   417 stretch  C58       Al95                                             
+ 418   418 stretch  C59       C60                                              
+ 419   419  bend    C59       C60       C63                                    
+ 420   420 torsion  C59       C60       C63       C64                          
+ 421   421 torsion  C59       C60       C63       C67                          
+ 422   422 torsion  C59       C62       C61       C68                          
+ 423   423 stretch  C59       C62                                              
+ 424   424  bend    C59       C62       C61                                    
+ 425   425 torsion  C60       C55       C56       C65                          
+ 426   426  bend    C60       C59       C62                                    
+ 427   427 torsion  C60       C59       C62       C61                          
+ 428   428 torsion  C60       C59       C62       C66                          
+ 429   429 stretch  C60       C63                                              
+ 430   430  bend    C60       C63       C64                                    
+ 431   431 torsion  C60       C63       C64       C65                          
+ 432   432 torsion  C60       C63       C64       Al96                         
+ 433   433  bend    C60       C63       C67                                    
+ 434   434 torsion  C60       C63       C67       C66                          
+ 435   435 torsion  C60       C63       C67       Al99                         
+ 436   436 stretch  C61       C62                                              
+ 437   437  bend    C61       C62       C66                                    
+ 438   438 torsion  C61       C62       C66       C67                          
+ 439   439 torsion  C61       C62       C66       C70                          
+ 440   440 stretch  C61       C68                                              
+ 441   441  bend    C61       C68       C69                                    
+ 442   442 torsion  C61       C68       C69       C70                          
+ 443   443 torsion  C61       C68       C69       Al101                        
+ 444   444  bend    C61       C68       Al100                                  
+ 445   445 torsion  C62       C59       C60       C63                          
+ 446   446  bend    C62       C61       C68                                    
+ 447   447 torsion  C62       C61       C68       C69                          
+ 448   448 stretch  C62       C66                                              
+ 449   449  bend    C62       C66       C67                                    
+ 450   450 torsion  C62       C66       C67       C63                          
+ 451   451  bend    C62       C66       C70                                    
+ 452   452 torsion  C62       C66       C70       C69                          
+ 453   453 torsion  C62       C66       C70       Al102                        
+ 454   454 stretch  C63       C64                                              
+ 455   455  bend    C63       C64       C65                                    
+ 456   456  bend    C63       C64       Al96                                   
+ 457   457 stretch  C63       C67                                              
+ 458   458  bend    C63       C67       C66                                    
+ 459   459  bend    C63       C67       Al99                                   
+ 460   460 stretch  C64       C65                                              
+ 461   461 stretch  C64       Al96                                             
+ 462   462 stretch  C65       Al97                                             
+ 463   463 stretch  C65       Al98                                             
+ 464   464 torsion  C66       C62       C61       C68                          
+ 465   465 stretch  C66       C67                                              
+ 466   466 torsion  C66       C70       C69       C68                          
+ 467   467 torsion  C66       C70       C69       C77                          
+ 468   468 stretch  C66       C70                                              
+ 469   469  bend    C66       C70       C69                                    
+ 470   470  bend    C66       C70       Al102                                  
+ 471   471 stretch  C67       Al99                                             
+ 472   472 stretch  C68       C69                                              
+ 473   473  bend    C68       C69       C70                                    
+ 474   474  bend    C68       C69       Al101                                  
+ 475   475 stretch  C68       Al100                                            
+ 476   476 stretch  C69       C70                                              
+ 477   477  bend    C69       C70       C77                                    
+ 478   478 stretch  C69       Al101                                            
+ 479   479 stretch  C70       Al102                                            
+ 480   480 stretch  C71       C72                                              
+ 481   481  bend    C71       C72       C73                                    
+ 482   482  bend    C71       C72       Al105                                  
+ 483   483 stretch  C71       Al103                                            
+ 484   484 stretch  C71       Al104                                            
+ 485   485 stretch  C72       C73                                              
+ 486   486 stretch  C72       Al105                                            
+ 487   487 stretch  C73       C74                                              
+ 488   488  bend    C73       C74       C75                                    
+ 489   489  bend    C73       C74       Al106                                  
+ 490   490 stretch  C74       C75                                              
+ 491   491 stretch  C74       Al106                                            
+ 492   492 torsion  C75       C42       C43       C78                          
+ 493   493 stretch  C75       C76                                              
+ 494   494  bend    C75       C76       C77                                    
+ 495   495 torsion  C75       C76       C77       C78                          
+ 496   496 torsion  C75       C76       C77       Al108                        
+ 497   497  bend    C75       C76       Al107                                  
+ 498   498 stretch  C76       C77                                              
+ 499   499  bend    C76       C77       C78                                    
+ 500   500  bend    C76       C77       Al108                                  
+ 501   501 stretch  C76       Al107                                            
+ 502   502 stretch  C77       C78                                              
+ 503   503 stretch  C77       Al108                                            
+ 504   504 stretch  C78       Al109                                            
+ 505   505 stretch  C78       Al110                                            
+ 506   506 torsion  Al82      C15       C22       Al83                         
+ 507   507 torsion  Al87      C30       C38       Al88                         
+ 508   508 torsion  Al91      C16       C52       Al92                         
+ 509   509 torsion  Al97      C56       C65       Al98                         
+ 510   510 torsion  Al103     C46       C71       Al104                        
+ 511   511 torsion  Al109     C43       C78       Al110                        
+  
+  nuclear repulsion energy.......   28503.621589516 hartrees
+ 
+ Non-default options chosen:
+   SCF calculation type: DFT(pbe-d3)                 
+   DFT=PBE(X+LC)+PW91 (PBE-D3)
+   Geometry will be optimized in redundant internal coordinates
+   Use projection method to maintain geometry constraints
+   Optimize geometry with fixed trust radius
+   Use level-shifting to restrict geometry steps
+   RFO level-shifting used
+   Solvation energy will be computed via PCM
+   Vibrational frequencies and related properties will be computed
+      from analytic second derivatives
+   IR intensities will be computed
+   Thermochemical properties will be computed
+   Thermochemical data will be computed for  40 temperatures starting at
+         1.00 K, at intervals of  100.00 K
+   Maximum number of SCF iterations: 4800
+   Thermal smearing with FON will be used.
+     Initial temperature:     300.00 K
+   Maximum number of geometry steps: 1000
+   Scaling standard convergence criteria by a factor of   3.00
+   BFGS Hessian-updating used
+   Geometry DIIS turned off
+   Molecular orbitals will be written to .vis files
+   Electron density will be written to .vis file
+   Molecular electrostatic potential will be written to .vis file
+   Average local ionization energy will be written to .vis file
+   Geometries will be output each geometry optimization step
+   Solvent: water                                                           
+  
+ Non-default print settings:
+    175=  2 192=  2 472=  2
+  
+ Temporary integer options set:
+     73=  2
+  
+  atom       vdw   vdw2    cov     mass  grid  daf  charge   basis
+  C1        1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C2        1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C3        1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C4        1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C5        1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C6        1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C7        1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C8        1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C9        1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C10       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C11       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C12       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C13       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C14       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C15       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C16       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C17       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C18       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C19       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C20       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C21       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C22       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C23       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C24       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C25       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C26       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C27       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C28       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C29       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C30       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C31       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C32       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C33       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C34       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C35       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C36       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C37       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C38       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C39       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C40       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C41       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C42       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C43       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C44       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C45       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C46       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C47       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C48       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C49       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C50       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C51       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C52       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C53       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C54       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C55       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C56       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C57       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C58       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C59       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C60       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C61       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C62       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C63       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C64       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C65       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C66       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C67       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C68       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C69       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C70       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C71       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C72       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C73       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C74       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C75       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C76       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C77       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  C78       1.949  1.900  0.770   12.000    Y    Y      Y    6-31g**
+  Al79      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al80      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al81      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al82      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al83      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al84      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al85      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al86      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al87      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al88      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al89      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al90      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al91      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al92      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al93      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al94      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al95      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al96      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al97      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al98      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al99      2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al100     2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al101     2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al102     2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al103     2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al104     2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al105     2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al106     2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al107     2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al108     2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al109     2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al110     2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al111     2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  Al112     2.308  2.249  1.180   26.982    Y    Y      Y    6-31g**
+  
+  Peak memory usage:   4952 Mb
+  
+  end of program pre
+   
+ Time(pre)  user:       16.2  user+sys:       16.2  wallclock:        6.7
+  
+  start of program onee
+  
+  smallest eigenvalue of S:    6.234E-05
+  number of canonical orbitals.....         1801
+  Peak memory usage:   4803 Mb
+  
+  end of program onee
+   
+ Time(onee)  user:       37.4  user+sys:       37.4  wallclock:        3.4
+  
+  start of program hfig
+  
+  initial wavefunction generated automatically from atomic wavefunctions
+ 
+  Irreducible     Total no   No of occupied orbitals 
+  representation  orbitals   Shell_1  Shell_2    ...
+  No Symm         1801        455
+  ------------------------
+  Orbital occupation/shell    1.000
+ 
+  Size of scratch files 77,78,79 will be:  2.387 Gb each
+  
+  Peak memory usage:   4825 Mb
+  
+  end of program hfig
+   
+ Time(hfig)  user:       34.5  user+sys:       34.5  wallclock:        8.6
+  
+  start of program probe
+  
+  Peak memory usage:   4795 Mb
+  
+  end of program probe
+   
+ Time(probe)  user:       27.9  user+sys:       27.9  wallclock:        6.0
+  
+  start of program grid
+  
+   grid     grid set  grid #  grid sym
+  ------    --------  ------  --------
+  coarse        0        0        1
+  medium        2        1        1
+  fine          0        0        1
+  ultrafine     4        2        1
+  charge       -1        3        1
+  gradient      4        2        1
+  density       0        0        1
+  DFT-fine    -11        4        1
+  DFT-med.    -10        5        1
+  DFT-grad    -12        6        1
+  DFT-der2     -8        7        1
+  DFT-cphf     -9        8        1
+  LMP2-enrg     4        2        1
+  LMP2-grad     2        1        1
+  DFT-cphf2   -15        9        1
+  PBF-dens      0        0        1
+  plotting     -7       10        1
+  Rel-grad    -17        0        1
+  
+  number of gridpoints: 
+     atom        C1       C2       C3       C4       C5       C6       C7
+  grid # 1       98       99       98       98       98       98      102
+  grid # 2      354      358      358      356      364      364      371
+  grid # 3      218      227      190      193      116      135      211
+  grid # 4     4436     4436     4436     4436     4436     4436     4436
+  grid # 5     1192     1192     1192     1192     1192     1192     1192
+  grid # 6     5510     5510     5510     5510     5510     5510     5510
+  grid # 7    13242    13242    13242    13242    13242    13242    13242
+  grid # 8      724      724      724      724      724      724      724
+  grid # 9      382      382      382      382      382      382      382
+   
+  number of gridpoints: 
+     atom        C8       C9      C10      C11      C12      C13      C14
+  grid # 1       97      101      101      100      100      100       96
+  grid # 2      363      371      367      370      374      360      364
+  grid # 3      138       56       50      119       77      163      103
+  grid # 4     4436     4436     4436     4436     4436     4436     4436
+  grid # 5     1192     1192     1192     1192     1192     1192     1192
+  grid # 6     5510     5510     5510     5510     5510     5510     5510
+  grid # 7    13242    13242    13242    13242    13242    13242    13242
+  grid # 8      724      724      724      724      724      724      724
+  grid # 9      382      382      382      382      382      382      382
+   
+  number of gridpoints: 
+     atom       C15      C16      C17      C18      C19      C20      C21
+  grid # 1      101      101       97      101       98      100      100
+  grid # 2      379      388      366      364      365      376      385
+  grid # 3       63       39       10      226      191      148       42
+  grid # 4     4436     4436     4436     4436     4436     4436     4436
+  grid # 5     1192     1192     1192     1192     1192     1192     1192
+  grid # 6     5510     5510     5510     5510     5510     5510     5510
+  grid # 7    13242    13242    13242    13242    13242    13242    13242
+  grid # 8      724      724      724      724      724      724      724
+  grid # 9      382      382      382      382      382      382      382
+   
+  number of gridpoints: 
+     atom       C22      C23      C24      C25      C26      C27      C28
+  grid # 1      104      101      104       98       99      102      100
+  grid # 2      383      376      374      358      356      372      366
+  grid # 3       14      122      111       79      198      221      221
+  grid # 4     4436     4436     4436     4436     4436     4436     4436
+  grid # 5     1192     1192     1192     1192     1192     1192     1192
+  grid # 6     5510     5510     5510     5510     5510     5510     5510
+  grid # 7    13242    13242    13242    13242    13242    13242    13242
+  grid # 8      724      724      724      724      724      724      724
+  grid # 9      382      382      382      382      382      382      382
+   
+  number of gridpoints: 
+     atom       C29      C30      C31      C32      C33      C34      C35
+  grid # 1      101      102       97      100      100      100      100
+  grid # 2      369      374      347      375      354      359      360
+  grid # 3      143       74       51      105      169      164      118
+  grid # 4     4436     4436     4436     4436     4436     4436     4436
+  grid # 5     1192     1192     1192     1192     1192     1192     1192
+  grid # 6     5510     5510     5510     5510     5510     5510     5510
+  grid # 7    13242    13242    13242    13242    13242    13242    13242
+  grid # 8      724      724      724      724      724      724      724
+  grid # 9      382      382      382      382      382      382      382
+   
+  number of gridpoints: 
+     atom       C36      C37      C38      C39      C40      C41      C42
+  grid # 1       99      103      100       96      100      102      102
+  grid # 2      356      375      383      352      374      367      363
+  grid # 3       49       13        8        8      122      173      161
+  grid # 4     4436     4436     4436     4436     4436     4436     4436
+  grid # 5     1192     1192     1192     1192     1192     1192     1192
+  grid # 6     5510     5510     5510     5510     5510     5510     5510
+  grid # 7    13242    13242    13242    13242    13242    13242    13242
+  grid # 8      724      724      724      724      724      724      724
+  grid # 9      382      382      382      382      382      382      382
+   
+  number of gridpoints: 
+     atom       C43      C44      C45      C46      C47      C48      C49
+  grid # 1      102      101      102      101       99      103      101
+  grid # 2      373      373      377      383      365      379      363
+  grid # 3       76       60       98       70      189      231      136
+  grid # 4     4436     4436     4436     4436     4436     4436     4436
+  grid # 5     1192     1192     1192     1192     1192     1192     1192
+  grid # 6     5510     5510     5510     5510     5510     5510     5510
+  grid # 7    13242    13242    13242    13242    13242    13242    13242
+  grid # 8      724      724      724      724      724      724      724
+  grid # 9      382      382      382      382      382      382      382
+   
+  number of gridpoints: 
+     atom       C50      C51      C52      C53      C54      C55      C56
+  grid # 1      100      100      103      101      101      102      103
+  grid # 2      373      361      378      387      365      364      367
+  grid # 3       89      179        9       46       88      174      105
+  grid # 4     4436     4436     4436     4436     4436     4436     4436
+  grid # 5     1192     1192     1192     1192     1192     1192     1192
+  grid # 6     5510     5510     5510     5510     5510     5510     5510
+  grid # 7    13242    13242    13242    13242    13242    13242    13242
+  grid # 8      724      724      724      724      724      724      724
+  grid # 9      382      382      382      382      382      382      382
+   
+  number of gridpoints: 
+     atom       C57      C58      C59      C60      C61      C62      C63
+  grid # 1       99       99      103      101      100      101      101
+  grid # 2      379      372      373      357      366      365      358
+  grid # 3      101       45      215      180      118      169      132
+  grid # 4     4436     4436     4436     4436     4436     4436     4436
+  grid # 5     1192     1192     1192     1192     1192     1192     1192
+  grid # 6     5510     5510     5510     5510     5510     5510     5510
+  grid # 7    13242    13242    13242    13242    13242    13242    13242
+  grid # 8      724      724      724      724      724      724      724
+  grid # 9      382      382      382      382      382      382      382
+   
+  number of gridpoints: 
+     atom       C64      C65      C66      C67      C68      C69      C70
+  grid # 1      101      101      102      100       99      102      101
+  grid # 2      386      371      364      369      372      380      382
+  grid # 3       73       10      134       50       25      100      103
+  grid # 4     4436     4436     4436     4436     4436     4436     4436
+  grid # 5     1192     1192     1192     1192     1192     1192     1192
+  grid # 6     5510     5510     5510     5510     5510     5510     5510
+  grid # 7    13242    13242    13242    13242    13242    13242    13242
+  grid # 8      724      724      724      724      724      724      724
+  grid # 9      382      382      382      382      382      382      382
+   
+  number of gridpoints: 
+     atom       C71      C72      C73      C74      C75      C76      C77
+  grid # 1       98      100       99       99      100      100      103
+  grid # 2      371      384      359      368      361      374      382
+  grid # 3        8       36      119       47      124       48      104
+  grid # 4     4436     4436     4436     4436     4436     4436     4436
+  grid # 5     1192     1192     1192     1192     1192     1192     1192
+  grid # 6     5510     5510     5510     5510     5510     5510     5510
+  grid # 7    13242    13242    13242    13242    13242    13242    13242
+  grid # 8      724      724      724      724      724      724      724
+  grid # 9      382      382      382      382      382      382      382
+   
+  number of gridpoints: 
+     atom       C78     Al79     Al80     Al81     Al82     Al83     Al84
+  grid # 1      102      641      650      624      616      652      642
+  grid # 2      378      641      650      624      616      652      642
+  grid # 3       19     1171     1417     1048      891     1279     1222
+  grid # 4     4436     4436     4436     4436     4436     4436     4436
+  grid # 5     1192     1192     1192     1192     1192     1192     1192
+  grid # 6     5510     8486     8486     8486     8486     8486     8486
+  grid # 7    13242    22316    22316    22316    22316    22316    22316
+  grid # 8      724      642      642      642      642      642      642
+  grid # 9      382      338      338      338      338      338      338
+   
+  number of gridpoints: 
+     atom      Al85     Al86     Al87     Al88     Al89     Al90     Al91
+  grid # 1      639      648      632      636      661      637      627
+  grid # 2      639      648      632      636      661      637      627
+  grid # 3     1160     1361     1030     1122     1532     1165     1064
+  grid # 4     4436     4436     4436     4436     4436     4436     4436
+  grid # 5     1192     1192     1192     1192     1192     1192     1192
+  grid # 6     8486     8486     8486     8486     8486     8486     8486
+  grid # 7    22316    22316    22316    22316    22316    22316    22316
+  grid # 8      642      642      642      642      642      642      642
+  grid # 9      338      338      338      338      338      338      338
+   
+  number of gridpoints: 
+     atom      Al92     Al93     Al94     Al95     Al96     Al97     Al98
+  grid # 1      633      624      643      663      644      655      651
+  grid # 2      633      624      643      663      644      655      651
+  grid # 3     1140     1013     1170     1504     1258     1451     1388
+  grid # 4     4436     4436     4436     4436     4436     4436     4436
+  grid # 5     1192     1192     1192     1192     1192     1192     1192
+  grid # 6     8486     8486     8486     8486     8486     8486     8486
+  grid # 7    22316    22316    22316    22316    22316    22316    22316
+  grid # 8      642      642      642      642      642      642      642
+  grid # 9      338      338      338      338      338      338      338
+   
+  number of gridpoints: 
+     atom      Al99    Al100    Al101    Al102    Al103    Al104    Al105
+  grid # 1      669      671      676      664      648      638      649
+  grid # 2      669      671      676      664      648      638      649
+  grid # 3     1568     1583     1683     1475     1334     1237     1290
+  grid # 4     4436     4436     4436     4436     4436     4436     4436
+  grid # 5     1192     1192     1192     1192     1192     1192     1192
+  grid # 6     8486     8486     8486     8486     8486     8486     8486
+  grid # 7    22316    22316    22316    22316    22316    22316    22316
+  grid # 8      642      642      642      642      642      642      642
+  grid # 9      338      338      338      338      338      338      338
+   
+  number of gridpoints: 
+     atom     Al106    Al107    Al108    Al109    Al110    Al111    Al112
+  grid # 1      659      654      671      650      625      593      636
+  grid # 2      659      654      671      650      625      593      636
+  grid # 3     1442     1377     1610     1337      978     1151     1362
+  grid # 4     4436     4436     4436     4436     4436     4436     4436
+  grid # 5     1192     1192     1192     1192     1192     1192     1192
+  grid # 6     8486     8486     8486     8486     8486     8486     8486
+  grid # 7    22316    22316    22316    22316    22316    22316    22316
+  grid # 8      642      642      642      642      642      642      642
+  grid # 9      338      338      338      338      338      338      338
+   
+  number of gridpoints: 
+     atom     total
+  grid # 1    29745
+  grid # 2    50710
+  grid # 3    52362
+  grid # 4   496832
+  grid # 5   133504
+  grid # 6   718304
+  grid # 7  1791620
+  grid # 8    78300
+  grid # 9    41288
+   
+  Peak memory usage:   4711 Mb
+  
+  end of program grid
+   
+ Time(grid)  user:      232.1  user+sys:      232.1  wallclock:       18.3
+  
+  start of program rwr
+  
+  Peak memory usage:   5027 Mb
+  
+  end of program rwr
+   
+ Time(rwr)  user:      365.5  user+sys:      365.5  wallclock:       28.9
+  
+  start of program scf
+  
+ number of electrons..........        910
+ number of alpha electrons....        455
+ number of beta electrons.....        455
+ number of orbitals, total....       1801
+ number of doubly-occ'd orbs..        455
+ number of open shell orbs....          0
+ number of occupied orbitals..        455
+ number of virtual orbitals...       1346
+ number of hamiltonians.......          1
+ number of shells.............          1
+ SCF type: DFT=PBE(X+LC)+PW91 (PBE-D3)
+ Energy computed with NOPS off.
+ Convergence Criterion:
+    Energy (econv):       1.00E-05
+    RMS density (dconv):  5.00E-06
+  
+       i  u  d  i  g                   
+       t  p  i  c  r                                 RMS    maximum
+       e  d  i  u  i                       energy  density   DIIS  
+       r  t  s  t  d       total energy    change  change    error 
+  
+etot    1  N  N  5  M  -11180.78974942529           2.3E-02  1.0E-01
+etot    2  Y  Y  6  M  -10705.00587397876 -4.8E+02  2.2E-02  3.8E-01
+etot    3  Y  Y  6  M  -11032.60048801071  3.3E+02  2.1E-02  1.5E-01
+etot    4  N  Y  2  U  -10914.24479911298 -1.2E+02  9.2E-02  1.8E-01
+etot    5  N  Y  2  U  -10391.59689716221 -5.2E+02  6.9E-02  2.5E-01
+etot    6  N  Y  2  U  -10865.61516496857  4.7E+02  3.2E-02  1.7E-01
+etot    7  Y  Y  6  M  -11159.73449824690  2.9E+02  7.1E-03  9.2E-02
+etot    8  N  Y  2  U  -11049.61102130431 -1.1E+02  3.9E-03  1.3E-01
+etot    9  N  Y  2  U  -11164.90201175321  1.2E+02  3.0E-03  8.2E-02
+etot   10  Y  Y  6  M  -11163.41887969952 -1.5E+00  2.5E-03  7.7E-02
+etot   11  N  Y  2  U  -11196.88826354587  3.3E+01  2.0E-03  4.3E-02
+etot   12  Y  Y  6  M  -11194.91132884942 -2.0E+00  1.4E-03  6.0E-02
+etot   13  N  Y  2  U  -11202.13405360311  7.2E+00  1.1E-03  2.4E-02
+etot   14  Y  Y  6  M  -11203.93837780629  1.8E+00  6.0E-04  1.9E-02
+etot   15  N  Y  2  U  -11204.74849232412  8.1E-01  3.5E-04  9.1E-03
+etot   16  Y  Y  6  M  -11204.98091506791  2.3E-01  2.1E-04  3.7E-03
+etot   17  N  Y  2  U  -11205.02870195824  4.8E-02  1.1E-04  2.3E-03
+etot   18  Y  Y  6  M  -11205.05088458185  2.2E-02  7.1E-05  1.8E-03
+etot   19  N  Y  2  U  -11205.06068116569  9.8E-03  5.2E-05  1.6E-03
+etot   20  Y  Y  6  M  -11205.06917116473  8.5E-03  4.9E-05  1.3E-03
+etot   21  N  Y  2  U  -11205.07621919458  7.0E-03  4.2E-05  7.9E-04
+etot   22  N  Y  2  U  -11205.08046462081  4.2E-03  3.1E-05  4.9E-04
+etot   23  N  Y  2  U  -11205.08276801604  2.3E-03  2.6E-05  4.6E-04
+etot   24  N  Y  2  U  -11205.08460994298  1.8E-03  2.4E-05  4.3E-04
+etot   25  N  Y  2  U  -11205.08611289900  1.5E-03  2.2E-05  4.3E-04
+etot   26  N  Y  2  U  -11205.08731919272  1.2E-03  2.0E-05  3.3E-04
+etot   27  N  Y  2  U  -11205.08827566454  9.6E-04  1.8E-05  3.0E-04
+etot   28  N  Y  2  U  -11205.08912053103  8.4E-04  1.6E-05  2.8E-04
+etot   29  N  Y  2  U  -11205.08984556367  7.3E-04  1.5E-05  2.5E-04
+etot   30  N  Y  2  U  -11205.09049285148  6.5E-04  1.5E-05  2.4E-04
+etot   31  N  Y  2  U  -11205.09105621848  5.6E-04  1.4E-05  2.4E-04
+  
+  ** Halting job in response to a termination signal **
+  
