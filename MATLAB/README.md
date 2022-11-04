@@ -8,7 +8,7 @@ Example scripts to run MATLAB on Discovery. The examples include:
 
 ## Serial example
 
-The script **submit_serial.bash** shell script is a basic example of running a serial batch job using MATLAB. It runs the MATLAB function **magic_square.m** on a single CPU (`--ntasks=1`) on the express partition.
+The **submit_serial.bash** shell script is a basic example of running a serial batch job using MATLAB. It runs the MATLAB function **magic_square.m** on a single CPU (`--ntasks=1`) on the express partition. Note that `--cpus-per-task=1` is commented out since it's the default, but can be used instead of `--ntasks=1` to indicate the use of a single CPU. 
 
 ```bash
 #!/bin/bash
@@ -32,6 +32,8 @@ To submit it run:
 ```bash
 sbatch submit_serial.bash 
 ```
+
+Note that the `-nodisplay` option is used to run matlab commands without a GUI.
 
 ## Parallel examples
 
@@ -70,7 +72,7 @@ rm -rf /scratch/$USER/$SLURM_JOB_ID
 
 ```
 
-Note that the MATLAB script **parforExample.m** has to include MATLAB Parallel synthax to ensure parallelism is invoked:
+Note that the MATLAB script **parforExample.m** has to include MATLAB Parallel syntax to ensure parallelism is invoked:
 
 ```
 % create a local cluster object:
@@ -86,10 +88,11 @@ parpool(pc, str2num(getenv('SLURM_NTASKS')))
 
 % run a parfor loop, distributing the iterations to the SLURM_CPUS_ON_NODE workers
 
-% 1. read the data and parameters (and iteration number N) from file: data
+% 1. load the data and parameters (and iteration number) from a current checkpoint file (if exists).
 
 parfor i = N:1000
-	%1. do a calculation with the data and paramters of i
+	%1. do a calculation with the data and paramters of iteration i
+	%2. store results of iteration i inside a temporary checkpoint file (named with i)
 end
 
 %2. store the current data / current parameters into a file: data
@@ -153,7 +156,7 @@ The script **submit_gpu.bash** inside directory **matlab_gpu** is an example Slu
 ```bash
 #!/bin/bash
 #SBATCH -N 1			#use one compute node
-#SBATCH --ntask=1		#use 1 task
+#SBATCH --ntasks=1		#use 1 task
 #SBATCH -p gpu			#use the 'gpu' partition
 #SBATCH --gres=gpu:1		#request a GPU inside the node
 #SBATCH --output=testGPU.out	#standard output file name
