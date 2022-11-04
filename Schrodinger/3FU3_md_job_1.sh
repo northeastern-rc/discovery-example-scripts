@@ -1,0 +1,1 @@
+"${SCHRODINGER}/utilities/multisim" -JOBNAME 3FU3_md_job_1 -HOST discovery-gpu -maxjob 1 -cpu 1 -m 3FU3_md_job_1.msj -c 3FU3_md_job_1.cfg -description "Molecular Dynamics" 3FU3_md_job_1.cms -mode umbrella -set "stage[1].set_family.md.jlaunch_opt=[\"-gpu\"]" -o 3FU3_md_job_1-out.cms -ATTACHED

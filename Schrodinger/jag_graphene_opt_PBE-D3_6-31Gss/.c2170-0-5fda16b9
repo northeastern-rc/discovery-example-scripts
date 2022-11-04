@@ -1,0 +1,70 @@
+filesize: 4256
+JobId: c2170-0-5fda16b9
+Name: jag_graphene_opt_PBE-D3_6-31Gss
+Program: Jaguar
+Project: /scratch/rana.de/Schrodinger/Covetics/Covetics.prj
+Processors: 1
+ViewName: jaguar_gui_dir.optimization.Optimization
+OrigLaunchHost: c2170.discovery.neu.edu
+OrigLaunchDir: /scratch/rana.de/Schrodinger/Covetics/Covetics.prj/jag_graphene_opt_PBE-D3_6-31Gss
+Host: c2170.discovery.neu.edu
+User: rana.de
+Dir: /scratch/rana.de/Schrodinger/Covetics/Covetics.prj/jag_graphene_opt_PBE-D3_6-31Gss
+HostsFile: /shared/centos7/schrodinger/2020-4/schrodinger.hosts
+HostEntry: localhost
+Commandline: /shared/centos7/schrodinger/2020-4/jaguar run -jobname=jag_graphene_opt_PBE-D3_6-31Gss jag_graphene_opt_PBE-D3_6-31Gss.in -HOST localhost:1 -PROJ /scratch/rana.de/Schrodinger/Covetics/Covetics.prj -DISP append -VIEWNAME jaguar_gui_dir.optimization.Optimization -TMPLAUNCHDIR
+MmshareExec: /shared/centos7/schrodinger/2020-4/mmshare-v5.2/bin/Linux-x86_64
+JobHost: c2170.discovery.neu.edu
+JobUser: rana.de
+JobDir: :tmpdir:
+TmpDir: /home
+JobDB: /home/rana.de/.schrodinger/.jobdb2
+JobMmshareExec: /shared/centos7/schrodinger/2020-4/mmshare-v5.2/bin/Linux-x86_64
+JobPort: 41347
+JobPid: 575
+Status: started
+LastStatus: launched
+Disposition: append
+Summary: The job directory has been created on c2170.discovery.neu.edu.
+Command: BASE64 ICIlU0NIUk9ESU5HRVIlL3J1biIgLUZST00gamFndWFyIHJ1bl9qYWd1YXJfYmFja2VuZC5weSBydW4gamV4ZWMucHkgLWpvYm5hbWUgamFnX2dyYXBoZW5lX29wdF9QQkUtRDNfNi0zMUdzcyBqYWdfZ3JhcGhlbmVfb3B0X1BCRS1EM182LTMxR3NzLmluID4gImphZ19ncmFwaGVuZV9vcHRfUEJFLUQzXzYtMzFHc3MubG9nIiAgMj4mMSA=
+Home: /home/rana.de
+Timezone: -0500
+LaunchTime: 2020-12-16-09:16:25
+StatusTime: 2020-12-16-09:16:25
+LogInterval: 60
+SaveJobDir: 0
+TmpLaunchDir: 1
+AutoCleanup: 0
+LogFiles[1]:	jag_graphene_opt_PBE-D3_6-31Gss.log
+LogFiles[2]:	jag_graphene_opt_PBE-D3_6-31Gss.recover
+LogFiles[3]:	jag_graphene_opt_PBE-D3_6-31Gss.out
+Transfers[1]:	'/scratch/rana.de/Schrodinger/Covetics/Covetics.prj/jag_graphene_opt_PBE-D3_6-31Gss/.write_dir.json' > '.write_dir.json'
+Transfers[2]:	'/scratch/rana.de/Schrodinger/Covetics/Covetics.prj/jag_graphene_opt_PBE-D3_6-31Gss/jag_graphene_opt_PBE-D3_6-31Gss.mae' > 'jag_graphene_opt_PBE-D3_6-31Gss.mae'
+Transfers[3]:	'/scratch/rana.de/Schrodinger/Covetics/Covetics.prj/jag_graphene_opt_PBE-D3_6-31Gss/jag_graphene_opt_PBE-D3_6-31Gss.in' > 'jag_graphene_opt_PBE-D3_6-31Gss.in'
+Transfers[4]:	'/home/rana.de/.schrodinger/.jobdb2/files/c2170-5fda1/c2170-0-5fda16b9.nodes' > 'c2170-0-5fda16b9.nodes'
+Transfers[5]:	'/home/rana.de/.schrodinger/.jobdb2/files/c2170-5fda1/c2170-0-5fda16b9.mpinodes' > 'c2170-0-5fda16b9.mpinodes'
+Licenses[1]:	JAGUAR_MAIN:2
+Envs[1]:	FLEXLM_TIMEOUT=3000000
+Envs[2]:	HOME_MMSHARE_EXEC=/shared/centos7/schrodinger/2020-4/mmshare-v5.2/bin/Linux-x86_64
+Envs[3]:	JAGUAR_EXEC=/shared/centos7/schrodinger/2020-4/jaguar-v11.0/bin/Linux-x86_64
+Envs[4]:	MMSHARE_EXEC=/shared/centos7/schrodinger/2020-4/mmshare-v5.2/bin/Linux-x86_64
+Envs[5]:	SCHRODINGER=/shared/centos7/schrodinger/2020-4
+Envs[6]:	SCHRODINGER_APP_EXEC=JAGUAR_EXEC
+Envs[7]:	SCHRODINGER_COMMANDLINE="/shared/centos7/schrodinger/2020-4/jaguar run -jobname=jag_graphene_opt_PBE-D3_6-31Gss jag_graphene_opt_PBE-D3_6-31Gss.in -HOST localhost:1 -PROJ /scratch/rana.de/Schrodinger/Covetics/Covetics.prj -DISP append -VIEWNAME jaguar_gui_dir.optimization.Optimization -TMPLAUNCHDIR"
+Envs[8]:	SCHRODINGER_EXEC=/shared/centos7/schrodinger/2020-4/internal/bin
+Envs[9]:	SCHRODINGER_FEATURE_FLAGS=-REMOVE_CPU_DESMOND
+Envs[10]:	SCHRODINGER_JOBID=c2170-0-5fda16b9
+Envs[11]:	SCHRODINGER_JOB_DEBUG=0
+Envs[12]:	SCHRODINGER_MPI_NODEFILE=%JOBDIR%/c2170-0-5fda16b9.mpinodes
+Envs[13]:	SCHRODINGER_NICE=local
+Envs[14]:	SCHRODINGER_NODEFILE=%JOBDIR%/c2170-0-5fda16b9.nodes
+Envs[15]:	SCHRODINGER_PERL_FEATURE_FLAGS_ENABLED=
+Envs[16]:	SCHRODINGER_PRODUCT=jaguar
+Envs[17]:	SCHRODINGER_PROJECT=/scratch/rana.de/Schrodinger/Covetics/Covetics.prj
+Envs[18]:	SCHRODINGER_SAVE_JOBDIR=0
+Envs[19]:	SCHRODINGER_THIRDPARTY=/shared/centos7/schrodinger/2020-4/thirdparty
+Envs[20]:	SCHRODINGER_TMP_LAUNCHDIR=yes
+Envs[21]:	SCHRODINGER_TPP=
+Envs[22]:	SCHRODINGER_UMASK=18
+Envs[23]:	SCHRODINGER_VIEWNAME=jaguar_gui_dir.optimization.Optimization
+Envs[24]:	SCHROD_LICENSE_FILE=27008@nu1-license.tsg.schrodinger.com:27008@licenses.discovery.neu.edu
